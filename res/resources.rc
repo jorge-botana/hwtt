@@ -1,0 +1,48 @@
+// ----------------------------------------------------------------------------
+// RESOURCES_RC
+//
+// - Resources file (properties of the compiled executable)
+//
+// -----------------------------------------------------------------------------
+// Copyright (c) 2023 Jorge Botana Mtz. de Ibarreta
+//
+// This source code is distributed under the terms of the MIT License. For more
+// information, please see the LICENSE.txt file or refer to the following link:
+//
+//                                           https://opensource.org/license/mit/
+// -----------------------------------------------------------------------------
+
+#ifndef   RESOURCES_RC
+#define   RESOURCES_RC
+
+#define   EN_US   0x0409
+#define   CP_L1   0X04E4
+
+MAINICON ICON "favicon.ico"
+
+1 VERSIONINFO
+FILEVERSION    1,0,0,0
+PRODUCTVERSION 1,0,0,0
+{
+    BLOCK "StringFileInfo"
+    {
+        BLOCK "040904E4"
+        {
+            VALUE "CompanyName"     , "No Company"
+            VALUE "FileDescription" , "Hardware Test Tool"
+            VALUE "FileVersion"     , "1.0.0.0"
+            VALUE "InternalName"    , "HWTT"
+            VALUE "LegalCopyright"  , "Copyright (c) 2023 Jorge Botana Mtz. de "
+                                      "Ibarreta"
+            VALUE "OriginalFilename", "hwtt.exe"
+            VALUE "ProductName"     , "Hardware Test Tool"
+            VALUE "ProductVersion"  , "1.0.0.0"
+        }
+    }
+    BLOCK "VarFileInfo"
+    {
+        VALUE "Translation", EN_US, CP_L1
+    }
+}
+
+#endif // RESOURCES_RC
